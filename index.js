@@ -33,7 +33,9 @@ function validateInput(input) {
         document.getElementById("form").reset();
         return false;
     }
-    return true;
+    else {
+        return true;
+    }
 }
 
 // This function returns the waste item information, or the default if the item isn't in the data.
@@ -42,7 +44,7 @@ async function getWasteItemOrDefualt(item) {
     const waste_items = await getWasteItems();
     for (let i = 1; i < waste_items.length; i++) {  // For each waste item in the database...
         for (let j = 0; j < waste_items[i].terms.length; j++) {
-            if (pattern.test(waste_items[i].terms[j])) {  // Match each possible search term against the input
+            if (pattern.test(waste_items[i].terms[j])) {  // Match each recorded search term against the input
                 
                 return waste_items[i];
             }
