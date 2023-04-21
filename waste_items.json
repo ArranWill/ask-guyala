@@ -357,7 +357,7 @@
         "information": "Littering plastic bags can be very dangerous as it can take many centuries to get decomposed. Therefore, with in that period it can do impacts such as release bad toxins into waterways and ground, marine animals tend to die or starve to death by taking in these plastic bags as food. The best option towards reusing plastics would be to go towards those which are made from renewable resources such as sugarcane and corn (The Vanella Group 2022).  "
     },
     {   "name": "Soil",
-        "terms": ["dirts", "soils"] ,
+        "terms": ["dirts", "soils"],
         "disposal" : [false, false, false, false, true],
         "information": "More information to come!"
     },
@@ -422,7 +422,7 @@
         "information": "More information to come!"
     },
     {   "name": "X-Ray Films",
-        "terms": ["xray films", "x-ray films"],
+        "terms": ["xray films", "x-ray films", "xrays", "x-rays"],
         "disposal" : [false, false, true, false, true],
         "information": "More information to come!"
     }
