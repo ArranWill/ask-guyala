@@ -45,7 +45,6 @@ async function getWasteItemOrDefualt(item) {
     for (let i = 1; i < waste_items.length; i++) {  // For each waste item in the database...
         for (let j = 0; j < waste_items[i].terms.length; j++) {
             if (pattern.test(waste_items[i].terms[j])) {  // Match each recorded search term against the input
-                
                 return waste_items[i];
             }
         }
