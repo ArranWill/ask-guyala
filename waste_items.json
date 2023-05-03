@@ -128,7 +128,7 @@
     },
     {   "name": "Computer Parts", 
         "terms": ["computers", "computer parts", "screens", "keyboards"],
-        "disposal" : [false, true, false, true, false],
+        "disposal" : [false, false, false, true, true],
         "information": "More information to come!"
     },
     {   "name": "Corks",
