@@ -1,0 +1,232 @@
+/* Global styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+.background {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("./background.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-container {
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+    text-align: center;
+}
+
+.title {
+    font-size: 80px;
+}
+
+#mascot {
+    position: absolute;
+    right: 0;
+    width: 25vh;
+    top: 8%;
+}
+
+.search-bar {
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: rgb(199, 180, 159);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.search-bar button:hover {
+    transition-duration: 0.4s;
+    background-color: coral;
+}
+
+.search-bar button img {
+    width: 25px;
+    filter: invert(100%);
+}
+
+#traffic-light-container {
+    width: 80%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.traffic-light {
+    width: 50px;
+    height: 50px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border-radius: 50%;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.off {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.organic-light {
+    background: green;
+}
+
+.organic-light:hover {
+    width: 100px;
+    height: 100px;
+    color: white;
+}
+
+.recycling-light {
+    background:gold;
+}
+
+.recycling-light:hover {
+    width: 100px;
+    height: 100px;
+    color: white;
+}
+
+.waste-light {
+    background:crimson;
+}
+
+.waste-light:hover {
+    width: 100px;
+    height: 100px;
+    color: white;
+}
+
+.transfer-station-light {
+    background: purple;
+}
+
+.transfer-station-light:hover {
+    width: 100px;
+    height: 100px;
+    color: white;
+}
+
+.specialist-recycler-light {
+    background:royalblue;
+}
+
+.specialist-recycler-light:hover {
+    width: 100px;
+    height: 100px;
+    color: white;
+}
+
+#information-container {
+    width: 80%;
+    height: 0px;
+    border-radius: 60px;
+    margin-top: 2.5%;
+    margin-bottom: 10%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    overflow: hidden;
+    transition: height 1s;
+    opacity: 0; 
+}
+
+#information-inner {
+    width: 100%;
+    padding-bottom: 2.5%;
+    height: fit-content;
+}
+
+#heading {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.body {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+}
+
+#reminder-container {
+    width: 80%;
+    height: fit-content;
+    bottom: 0;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    margin-bottom: 2.5%;
+    border-radius: 60px;
+    background: rgb(199, 180, 159);
+    opacity: 0;
+    text-align: center;
+}
+
+#acknowledgement-container {
+    width: 80%;
+    height: fit-content;
+    bottom: 0;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    margin-bottom: 5%;
+    border-radius: 60px;
+    background: coral;
+    opacity: 0;
+    text-align: center;
+}
+
+.fade-in {
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
