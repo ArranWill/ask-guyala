@@ -78,14 +78,13 @@
   display: flex;
   margin: 5vw;
   padding: 2.5vw;
-  -webkit-appearance: none;
   -webkit-backdrop-filter: blur(4px);
 }
 
 #form button {
   align-items: center;
   /* background: rgb(199, 180, 159); */
-  background: black;
+  background: greenyellow;
   border: 0;
   border-radius: 60vw;
   cursor: pointer;
@@ -93,6 +92,7 @@
   height: 15vw;
   justify-content: center;
   width: 15vw;
+  -webkit-appearance: none;
 }
 
 #form button:hover {
