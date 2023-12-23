@@ -1,0 +1,334 @@
+* {
+  box-sizing: border-box;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: royalblue;
+}
+
+/* Classes */
+.banner {
+  border-radius: 10vw;
+  height: fit-content;
+  margin: 7vw 5vw;
+  opacity: 0;
+  padding: 5vw;
+  text-align: justify;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.guyala-clicked {
+  transform: rotate(200deg) translate(-10vw, -20vw) !important;
+  transition-timing-function: ease !important;
+}
+
+.off {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+::placeholder {
+  color: white;
+}
+
+.traffic-light {
+  align-items: center;
+  backdrop-filter: blur(4px);
+  border-radius: 60vw;
+  display: flex;
+  font-size: 0px;
+  height: 12.5vw;
+  justify-content: center;
+  opacity: 0;
+  text-align: center;
+  width: 12.5vw;
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.traffic-light-clicked {
+  font-size: 16px !important;
+  color: white !important;
+  height: 25vw !important;
+  width: 25vw !important;
+}
+
+/* Ids */
+#about {
+  margin-bottom: 15vh;
+  opacity: 0;
+  text-align: center;
+}
+
+#about a {
+  color: darkgreen;
+}
+
+#about a:hover {
+  color: white;
+}
+
+#acknowledgement {
+  background: coral;
+  margin-bottom: 9vw;
+}
+
+/* Can't use background-attachment: fixed because it doesn't work on iOS. */
+#background {
+  background-image: url("./background.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: fixed;
+}
+
+#content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: scroll;
+  z-index: 0;
+}
+
+#form {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  border-radius: 15vw;
+  display: flex;
+  margin: 5vw;
+  padding: 2.5vw;
+  -webkit-backdrop-filter: blur(4px);
+}
+
+#form button {
+  align-items: center;
+  background: rgb(199, 180, 159);
+  border: 0;
+  border-radius: 60vw;
+  cursor: pointer;
+  display: flex;
+  height: 12.5vw;
+  justify-content: center;
+  width: 12.5vw;
+}
+
+#form button:hover {
+  background-color: coral;
+}
+
+#form button img {
+  filter: invert(100%);
+  width: 6.5vw;
+}
+
+#form input {
+  background: transparent;
+  border: 0;
+  flex: 1;
+  outline: none;
+  padding-left: 5vw;
+}
+
+#guyala {
+  position: fixed;
+  top: -71vw;
+  right: 0vw;
+  transform: rotate(205deg);
+  width: 80vw;
+  z-index: 1;
+}
+
+#heading {
+  font-size: 24px;
+}
+
+#information-container {
+  backdrop-filter: blur(4px); /* This one works for Chromium browsers */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10vw;
+  margin: 5vw;
+  opacity: 0;
+  padding: 5vw;
+  text-align: justify;
+  -webkit-backdrop-filter: blur(4px); /*This one works for Safari */
+}
+
+#organic-light {
+  background: green;
+}
+
+#recycling-light {
+  background:gold;
+}
+
+#reminder {
+  background: rgb(199, 180, 159);
+  margin-top: 12vw;
+}
+
+#specialist-recycler-light {
+  background:royalblue;
+}
+
+#tagline {
+  margin: 2.5vw;
+  padding-top: 33vw;
+  text-align: center;
+}
+
+#title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 9.5vw;
+  letter-spacing: 0.2rem;
+  margin: 0vw 0vw 9vw 0vw;
+  text-align: center;
+}
+
+#traffic-light-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 5vw 2.5vw;
+}
+
+#transfer-station-light {
+  background: purple;
+}
+
+#waste-light {
+  background:crimson;
+}
+
+/* Guyala was obscuring the scrollbar. I couldn't move Guyala and keep him interactive, so instead I've hidden the scrollbar. */
+::-webkit-scrollbar, ::-webkit-scrollbar-corner {
+  width: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* Classes */
+  .banner {
+    border-radius: 5vw;
+    margin: 2.5vw 30vw 3.5vw 30vw;
+    padding: 2.5vw;
+  }
+
+  .guyala-clicked {
+    transform: rotate(295deg) translate(-2.5vw, -5vw) !important;
+  }
+
+  .on:hover {
+    font-size: 16px;
+    height: 10vw;
+    width: 10vw;
+  }
+
+  .traffic-light {
+    height: 5vw;
+    width: 5vw;
+  }
+
+  .traffic-light-clicked {
+    height: 10vw !important;
+    width: 10vw !important;
+  }
+
+  /* Ids */
+  #about {
+    margin-bottom: 0vh;
+  }
+
+  #form {
+    margin: 2.5vw 30vw 2.5vw 30vw;
+    padding: 1.5vw;
+  }
+
+  #form button {
+    height: 5vw;
+    width: 5vw;
+  }
+
+  #form button img {
+    width: 2.5vw;
+  }
+
+  #form input {
+    padding-left: 2.5vw;
+  }
+
+  #guyala {
+    right: -27vw;
+    top: 5vw;
+    transform: rotate(300deg);
+    width: 45vw;
+  }
+  
+  #guyala:hover {
+    transform: rotate(295deg) translate(-2.5vw, -5vw) !important;
+    transition-timing-function: ease;
+  }
+
+  #information-container {
+    border-radius: 5vw;
+    margin: 2.5vw 30vw 9vw 30vw;
+    padding: 2.5vw;
+  }
+
+  #reminder {
+    margin-top: 3vw;
+  }
+
+  #tagline {
+    padding-top: 3.5vw;
+    margin: 5vw 30vw 5.5vw 30vw;
+  }
+
+  #title {
+    font-size: 4.5vw;
+    margin: -4vw 28vw 7vw 28vw;
+  }
+
+  #traffic-light-container {
+    margin: 1vw 28.4vw 2.5vw 28.4vw;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    /* Classes */
+    .guyala-clicked {
+      transform: rotate(295deg) translate(-1.5vw, -4vw) !important;
+    }
+  
+    .on:hover {
+      height: 7.5vw;
+      width: 7.5vw;
+    }
+  
+    .traffic-light-clicked {
+      height: 7.5vw !important;
+      width: 7.5vw !important;
+    }
+  
+    /* Ids */  
+    #guyala {
+      right: -21vw;
+      top: 3vw;
+      transform: rotate(300deg);
+      width: 35vw;
+    }
+    
+    #guyala:hover {
+      transform: rotate(295deg) translate(-1.5vw, -4vw) !important;
+    }
+  }
+}
