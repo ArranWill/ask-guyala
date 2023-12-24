@@ -174,5 +174,5 @@ const TRAFFIC_LIGHTS = {
   4: "specialist-recycler-light"
 }
 
-var is_first_query = true;  // This is so the fade in effect only runs the first time the user enters an item.
+let is_first_query = true;  // This is so the fade in effect only runs the first time the user enters an item.
 listenForInput();  // This makes the script run.
