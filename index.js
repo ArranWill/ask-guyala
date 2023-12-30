@@ -7,7 +7,7 @@ function listenForInput() {
 
 // This function waits for the user to click the search button or press the enter key, then initiates the query.
 function listenForSearch() {
-  BUTTON_SUBMIT.addEventListener("click", () => respondToInput(INPUT.value));
+  BUTTON_SUBMIT.addEventListener("click", () => respondToSearch(INPUT.value));
   INPUT.addEventListener("keypress", (event) => submitOnEnter(event));
 }
 
@@ -29,10 +29,10 @@ function listenForTrafficLightClick() {
 }
 
 // This function makes the clicked traffic light expand then contract, provided it is on.
-function animateTrafficLight(current_traffic_light) {
-  if (current_traffic_light.classList.contains("on")) {
-    current_traffic_light.classList.add("traffic-light-clicked");
-    setTimeout(() => current_traffic_light.classList.remove("traffic-light-clicked"), 750);
+function animateTrafficLight(traffic_light) {
+  if (traffic_light.classList.contains("on")) {
+    traffic_light.classList.add("traffic-light-clicked");
+    setTimeout(() => traffic_light.classList.remove("traffic-light-clicked"), 750);
   }
 }
 
@@ -48,9 +48,9 @@ function animateGuyala() {
 }
 
 // This function checks the input is valid, then writes the page information.
-async function respondToInput(search_term) {
-  if (isValidInput(search_term)) {
-    const WASTE_ITEM = await getWasteItemOrDefualt(search_term);
+async function respondToSearch(input) {
+  if (isValidWasteItem(input)) {
+    const WASTE_ITEM = await getWasteItemOrDefualt(input);
     setTrafficLights(WASTE_ITEM);
     setPageBody(WASTE_ITEM);
     if (is_first_query) {
@@ -61,14 +61,14 @@ async function respondToInput(search_term) {
 }
 
 // This function checks the user has typed in appropriate input.
-function isValidInput(input) {
+function isValidWasteItem(input) {
   if (input.length < 1) {
-    alert("Please type in a waste item. 🙃");
+    alert("Please type in a waste item 🙃");
     document.getElementById("form").reset();
     return false;
   }
   else if (input.length > 50) {
-    alert("Maximum search term length is 50 characters. 😤")
+    alert("Maximum search term length is 50 characters 🙃");
     document.getElementById("form").reset();
     return false;
   }
@@ -78,17 +78,17 @@ function isValidInput(input) {
 }
 
 // This function returns the waste item information, or the default if the item isn't in the data.
-async function getWasteItemOrDefualt(item) {
-  const PATTERN = new RegExp("^"+item.toLowerCase()+"s?$");
+async function getWasteItemOrDefualt(input) {
   const WASTE_ITEMS = await getWasteItems();
+  const PATTERN = new RegExp(`^${input.trim().toLowerCase()}s?$`);  // ^ = must start with, ${input...} = input, s? = one optional s, $ means must end.
   for (let i = 1; i < WASTE_ITEMS.length; i++) {  // For each waste item in the database...
     for (let j = 0; j < WASTE_ITEMS[i].terms.length; j++) {
-      if (PATTERN.test(WASTE_ITEMS[i].terms[j])) {  // Match each recorded search term against the input
+      if (PATTERN.test(WASTE_ITEMS[i].terms[j])) {  // Match each recorded search term against the input.
         return WASTE_ITEMS[i];
       }
     }
   }
-  return WASTE_ITEMS[0];  // This is the default.
+  return WASTE_ITEMS[0];  // This is the default if there is no match.
 }
 
 // This function fetches the data from "waste_items.json".
@@ -99,16 +99,16 @@ async function getWasteItems() {
 
 // This function changes the colour of the traffic lights based on the disposal array.
 function setTrafficLights(waste_item) {
-  let current_traffic_light;
+  let traffic_light;
   for (let i = 0; i < 5; i++) {
-    current_traffic_light = document.getElementById(TRAFFIC_LIGHTS[i]);
+    traffic_light = document.getElementById(TRAFFIC_LIGHTS[i]);  // Traffic lights are defined at the bottom of the page.
     if (waste_item.disposal[i]) {
-      current_traffic_light.classList.remove("off");
-      current_traffic_light.classList.add("on")
+      traffic_light.classList.remove("off");
+      traffic_light.classList.add("on")
     }
     else {
-      current_traffic_light.classList.remove("on");
-      current_traffic_light.classList.add("off");
+      traffic_light.classList.remove("on");
+      traffic_light.classList.add("off");
     }
   }
 }
@@ -123,7 +123,7 @@ function setPageBody(waste_item) {
   else {
     document.getElementById("heading").innerHTML = waste_item.name;
     document.getElementById("disposal").innerHTML = getDisposal(waste_item);
-    document.getElementById("information").innerHTML = waste_item.information + (waste_item.information.length > 0 ? "<br><br>" : "");  // This is wild, I changed something completely different and had to add this to get the text to format properly.
+    document.getElementById("information").innerHTML = waste_item.information + (waste_item.information.length > 0 ? "<br><br>" : "");
   }     
 }
 
@@ -138,14 +138,14 @@ function getDisposal(waste_item) {
     4: `Some common waste items are more difficult to recycle. You can take ${waste_item.name} to a specialist recycler for re-processing, and if the material can be recovered it will be recycled and turned into a useful product! Read more about <a href="https://www.cairns.qld.gov.au/water-waste-roads/waste-and-recycling/what-happens-to-my-waste/specialist-recycling">specialist recycling</a> in Cairns. `
   }   
   for (let i = 0; i < 5; i++) {
-    if (waste_item.disposal[i]) {
+    if (waste_item.disposal[i]) {  // Disposal is an array of booleans.
       disposal_string += DISPOSAL_TEMPLATES[i];
     }
   }
   return disposal_string;
 }
 
-// This function makes the information fade in. The ugly implementation is due to chrome not allowing the backdrop-filter effect to be nested within divs.
+// This function makes specified page elements fade in.
 function fadeInElements() {
   for (let i = 0; i < ELEMENTS_TO_FADE_IN.length; i++) {
     document.getElementById(ELEMENTS_TO_FADE_IN[i]).classList.add("fade-in");
