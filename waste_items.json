@@ -360,7 +360,7 @@
     "pluralisation": "are"
   },
   { "name": "Pizza Boxes",
-    "terms": ["pizza", "pizza boxes"],
+    "terms": ["pizza", "pizza box", "pizza boxes"],
     "disposal" : [false, true, false, true, false],
     "information": "",
     "pluralisation": "are"
