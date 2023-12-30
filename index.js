@@ -49,7 +49,7 @@ function animateGuyala() {
 
 // This function checks the input is valid, then writes the page information.
 async function respondToSearch(input) {
-  if (isValidWasteItem(input)) {
+  if (isValidInput(input)) {
     const WASTE_ITEM = await getWasteItemOrDefualt(input);
     setTrafficLights(WASTE_ITEM);
     setPageBody(WASTE_ITEM);
@@ -61,7 +61,7 @@ async function respondToSearch(input) {
 }
 
 // This function checks the user has typed in appropriate input.
-function isValidWasteItem(input) {
+function isValidInput(input) {
   if (input.length < 1) {
     alert("Please type in a waste item 🙃");
     document.getElementById("form").reset();
