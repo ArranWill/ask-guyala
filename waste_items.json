@@ -35,16 +35,22 @@
     "information": "",
     "pluralisation": "is"
   },
+  { "name": "Balloons", 
+    "terms": ["balloons"],
+    "disposal" : [false, false, true, false, false],
+    "information": "",
+    "pluralisation": "are"
+  },
   { "name": "Batteries", 
     "terms": ["batteries", "battery", "car battery", "car batteries"],
     "disposal" : [false, false, false, true, true],
-    "information": "Batteries contain hazardous materials like lead, cadmium and mercury which can pollute the environment when disposed of in landfill sites or thrown out elsewhere. These materials are considered poisonous for humans, and they can contaminate soil and water if they stay in the environment for a long time. ",
+    "information": "",
     "pluralisation": "are"
   },
   { "name": "Books", 
     "terms": ["books", "notebooks", "journals"],
     "disposal" : [false, true, false, true, false],
-    "information": "Books are made from paper and paper is formed by the pulp of trees so we will have to reuse the paper of books in different ways like cleaning in the kitchen, making envelopes with them, can be used as cover on the air conditioners and we can also gift the old books to junior students or library. ",
+    "information": "",
     "pluralisation": "are"
   },
   { "name": "Bottle Tops & Caps",
@@ -62,7 +68,7 @@
   { "name": "Building Material", 
     "terms": ["building material", "bricks", "concrete", "pavers", "rubble"],
     "disposal" : [false, false, false, true, false],
-    "information": "Building material is considered as the biggest waste in Australia because it creates 16.8% of the total waste in Australia. Building material contains bricks, stones, plastic, wood, concrete, timber and metal. We can reuse wood for cooking and burning fires in winter. Bricks and stones can be used to make garden paths and road paths in the time of rain. ",
+    "information": "",
     "pluralisation": "is"
   },
   { "name": "Car Parts",
@@ -74,7 +80,7 @@
   { "name": "Cardboard", 
     "terms": ["box", "boxes", "cardboard", "cereal boxes", "cardboard boxes", "cartons", "egg cartons", "juice cartons", "milk cartons", "toilet paper rolls"],
     "disposal" : [false, true, false, true, false],
-    "information": "Cardboard is recyclable and doesn’t cause harm to the environment, that is why it is considered one of the most environmentally friendly packaging options.",
+    "information": "",
     "pluralisation": "is"
   },
   { "name": "Carpet",
@@ -122,7 +128,7 @@
   { "name": "Cigarette Butts",
     "terms": ["cigarettes", "cigarette butts"],
     "disposal" : [false, false, true, false, true],
-    "information": "The littering of cigarette butts will lead to the release of toxic chemicals such as cadmium, lead and zinc which would eventually damage the environment and even go on to contaminate water (Keep Australia Beautiful WA 2023). The decomposing rate of a cigarette butt is slow it could range from 2 years and up to 14 years or more to decompose (Truth initiative 2023). Also due to the plastic fibers that are present in the cigarette butts it is non-biodegradable.  ",
+    "information": "",
     "pluralisation": "are"
   },
   { "name": "Clothing, Fabrics & Shoes",
@@ -180,7 +186,7 @@
     "pluralisation": "is"
   },
   { "name": "Electrical Appliances",
-    "terms": ["dishwashers", "eletrical appliances", "fridges", "kitchen appliances", "washing machines", "white goods"],
+    "terms": ["dishwashers", "electrical appliances", "fridges", "kitchen appliances", "washing machines", "white goods"],
     "disposal" : [false, false, false, true, false],
     "information": "",
     "pluralisation": "are"
@@ -206,7 +212,7 @@
   { "name": "Food Scraps",
     "terms": ["apples", "apple cores", "bananas", "banana peels", "banana skins", "foods", "food scraps", "fruits", "oranges", "orange peels", "vegetables", "vegetable scraps"],
     "disposal" : [true, false, true, false, false],
-    "information": "Littering food scraps can be very dangerous as it can produce a large portion of methane which is known to be a strong greenhouse gas, and this is likely to happen when they end up in landfills (Move For Hunger 2023). It is known that food scraps lead to one third of the greenhouse gas emissions. In figures this is a total of 8% of greenhouse gas produced by human activities annually (Earth Org 2022). The 8% is a value that only accounts from the littering of food scraps by humans (Earth Org 2022). The littering of food scraps is causing the Australian economy a nearly $36.6 billion (Queensland Government 2022). With that the statistics suggest that It is also found out that a range in between $2000 and $2500 is spent on the wasted food by the Australian households each year (Queensland Government 2022).",
+    "information": "",
     "pluralisation": "are"
   },
   { "name": "Food Sticks",
@@ -234,7 +240,7 @@
     "pluralisation": "is"
   },
   { "name": "Gas Bottles", 
-    "terms": ["gas", "gas bottles"],
+    "terms": ["gas", "gas bottles", "gas containers", "gas canisters"],
     "disposal" : [false, false, false, true, false],
     "information": "",
     "pluralisation": "are"
@@ -242,13 +248,13 @@
   { "name": "Glass Bottles",
     "terms": ["beer bottles", "bottles", "glass bottles", "wine bottles"],
     "disposal" : [false, true, false, true, false],
-    "information": "Littering glass can cause environmental harm, as glass tends to take more than one million years to decompose (Lil Bit Better 2021). But this does not end here because if it gets ended up in landfill sites this could exceed the previous amount of 1 million years that it takes to normally get decomposed (Lil Bit Better 2021). The best alternative option about glass bottles is that it could be reused again and again because the glass doesn’t release any chemicals to the surroundings. ",
+    "information": "",
     "pluralisation": "are"
   },
   { "name": "Glass Containers",
     "terms": ["glass containers", "jars"],
     "disposal" : [false, true, false, true, false],
-    "information": "Littering glass can cause environmental harm, as glass tends to take more than one million years to decompose (Lil Bit Better 2021). But this does not end here because if it gets ended up in landfill sites this could exceed the previous amount of 1 million years that it takes to normally get decomposed (Lil Bit Better 2021). The best alternative option about glass bottles is that it could be reused again and again because the glass doesn’t release any chemicals to the surroundings. ",
+    "information": "",
     "pluralisation": "are"
   },
   { "name": "Glasses (Spectacles)", 
@@ -260,7 +266,7 @@
   { "name": "Glassware",
     "terms": ["glassware", "pyrex", "glass trays"] ,
     "disposal" : [false, false, true, false, true],
-    "information": "Littering glass can cause environmental harm, as glass tends to take more than one million years to decompose (Lil Bit Better 2021). But this does not end here because if it gets ended up in landfill sites this could exceed the previous amount of 1 million years that it takes to normally get decomposed (Lil Bit Better 2021). The best alternative option about glass bottles is that it could be reused again and again because the glass doesn’t release any chemicals to the surroundings. ",
+    "information": "",
     "pluralisation": "is"
   },
   { "name": "Grass Clippings",
@@ -296,7 +302,7 @@
   { "name": "Light Bulbs & Tubes",
     "terms": ["bulbs", "light bulbs", "light tubes"],
     "disposal" : [false, false, true, true, false],
-    "information": "Light bulbs contain mercury and phosphorous and both have harmful effects on human beings.  If light bulbs are thrown outside, they end up in landfills where these substances can leach out into the groundwater and end up contaminating drinking water. ",
+    "information": "",
     "pluralisation": "are"
   },
   { "name": "Matresses", 
@@ -324,7 +330,7 @@
     "pluralisation": "are"
   },
   { "name": "Cooking Oil", 
-    "terms": ["cooking oils", "grease", "oil", "vegetabel oils"],
+    "terms": ["cooking oils", "greases", "oils", "vegetabel oils"],
     "disposal" : [false, false, false, true, false],
     "information": "",
     "pluralisation": "is"
@@ -386,7 +392,7 @@
   { "name": "Polystyrene",
     "terms": ["polystyrene", "styrofoam"],
     "disposal" : [false, false, true, true, false],
-    "information": "Polystyrene is a lightweight plastic material which is filled mainly with air, and this covers nearly 98% and this material and has been used for packaging certain products that can be easily breakable and fragile. Polystyrene can also be known as a non-renewable resource as it is mainly made from oil (Planet ARK 2020). Therefore, as there is only a certain amount of this resource found on our planet earth littering and wasting these items could harm our environment and the amount of these materials required to produce these products. When considering the recycling process of these polystyrene is that it needs to be sent to a transfer station where it will undergo a process of been melted down. After that it will finally be turned into products which includes outdoor furniture, picture frames (Planet ARK 2020). ",
+    "information": "",
     "pluralisation": "are"
   },
   { "name": "Tetra Paks", 
@@ -407,6 +413,12 @@
     "information": "",
     "pluralisation": "are"
   },
+  { "name": "Ring Pull Lids",
+    "terms": ["ring pulls", "ring pull lids"],
+    "disposal" : [false, false, true, false, false],
+    "information": "",
+    "pluralisation": "are"
+  },
   { "name": "Rope",
     "terms": ["ropes", "string"],
     "disposal" : [false, false, true, true, false],
@@ -420,7 +432,7 @@
     "pluralisation": "are"
   },
   { "name": "Scrap Metal",
-    "terms": ["scrap metals", "metals"],
+    "terms": ["metals", "scrap metals", "steels"],
     "disposal" : [false, false, false, true, false],
     "information": "",
     "pluralisation": "is"
@@ -434,7 +446,7 @@
   { "name": "Soft Plastics",
     "terms": ["bags", "cellophane", "cereal box inserts", "chip packets", "cling wrap", "coffee pods", "lolly wrappers", "plastics", "plastic bags", "plastic wrappers", "wrappers"],
     "disposal" : [false, false, true, false, true],
-    "information": "Littering plastic bags can be very dangerous as it can take many centuries to get decomposed. Therefore, with in that period it can do impacts such as release bad toxins into waterways and ground, marine animals tend to die or starve to death by taking in these plastic bags as food. The best option towards reusing plastics would be to go towards those which are made from renewable resources such as sugarcane and corn (The Vanella Group 2022).  ",
+    "information": "",
     "pluralisation": "are"
   },
   { "name": "Soil",
@@ -446,6 +458,12 @@
   { "name": "Steel Cans", 
     "terms": ["cans", "food cans", "steel cans", "tins"],
     "disposal" : [false, true, false, true, false],
+    "information": "",
+    "pluralisation": "are"
+  },
+  { "name": "Stickers",
+    "terms": ["stickers"],
+    "disposal" : [false, false, true, false, false],
     "information": "",
     "pluralisation": "are"
   },
