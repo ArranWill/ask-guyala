@@ -12,7 +12,7 @@
   "pluralisation": "are"
   },
   { "name": "Aluminium Cans", 
-    "terms": ["aluminium cans", "beer cans", "soda cans", "soft drink cans", "tinnies", "tinny"],
+    "terms": ["aluminium cans", "beer cans", "drink cans", "drinks cans", "soda cans", "soft drink cans", "tinnies", "tinny"],
     "disposal" : [false, true, false, true, false],
     "information": "Aluminium is a highly sustainable material because it can be recycled again and again without losing its quality. In Australia, aluminium is primarily used to make beverage cans (Planet Ark, 2020). “Almost 70% of all aluminium beverage cans globally are recycled, which makes the aluminium can the most recycled drinks container on the planet.” (International Aluminium Institute, n.d.)\nIn Queensland there is an initiative called “Containers for Change”, where members receive 10c for each aluminium, glass, plastic, steel or liquid paperboard container returned to participating refund points (Containers for Change, 2020).",
     "pluralisation": "are"
@@ -36,7 +36,7 @@
     "pluralisation": "is"
   },
   { "name": "Batteries", 
-    "terms": ["batteries", "car battery", "car batteries"],
+    "terms": ["batteries", "battery", "car battery", "car batteries"],
     "disposal" : [false, false, false, true, true],
     "information": "Batteries contain hazardous materials like lead, cadmium and mercury which can pollute the environment when disposed of in landfill sites or thrown out elsewhere. These materials are considered poisonous for humans, and they can contaminate soil and water if they stay in the environment for a long time. ",
     "pluralisation": "are"
@@ -72,7 +72,7 @@
     "pluralisation": "are"
   },
   { "name": "Cardboard", 
-    "terms": ["cardboard", "cereal boxes", "cardboard boxes", "cartons", "egg cartons", "juice cartons", "milk cartons", "toilet paper rolls"],
+    "terms": ["box", "boxes", "cardboard", "cereal boxes", "cardboard boxes", "cartons", "egg cartons", "juice cartons", "milk cartons", "toilet paper rolls"],
     "disposal" : [false, true, false, true, false],
     "information": "Cardboard is recyclable and doesn’t cause harm to the environment, that is why it is considered one of the most environmentally friendly packaging options.",
     "pluralisation": "is"
@@ -520,5 +520,5 @@
   "disposal" : [false, false, true, false, true],
   "information": "",
   "pluralisation": "are"
-}
+  }
 ]
