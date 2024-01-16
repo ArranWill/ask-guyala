@@ -12,10 +12,12 @@
 .banner {
   border-radius: 10vw;
   height: fit-content;
-  margin: 7vw 5vw;
+  line-height: 1.6;
+  margin: 7vw auto;
   opacity: 0;
   padding: 5vw;
-  text-align: justify;
+  text-align: left;
+  width: 90vw;
 }
 
 .fade-in {
@@ -110,9 +112,10 @@ html, body {
   backdrop-filter: blur(4px);
   border-radius: 15vw;
   display: flex;
-  margin: 5vw;
+  margin: 5vw auto;
   padding: 2.5vw;
   -webkit-backdrop-filter: blur(4px);
+  width: 90vw;
 }
 
 #form button {
@@ -161,11 +164,13 @@ html, body {
   backdrop-filter: blur(4px); /* This one works for Chromium browsers */
   background: rgba(255, 255, 255, 0.2);
   border-radius: 10vw;
-  margin: 5vw;
+  line-height: 1.6;
+  margin: 5vw auto;
   opacity: 0;
   padding: 5vw;
-  text-align: justify;
+  text-align: left;
   -webkit-backdrop-filter: blur(4px); /*This one works for Safari */
+  width: 90vw;
 }
 
 #organic-light {
@@ -193,16 +198,17 @@ html, body {
 
 #title {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 9.5vw;
+  font-size: 10.5vw;
   letter-spacing: 0.2rem;
-  margin: 0vw 0vw 9vw 0vw;
+  margin: 0vw auto 9vw auto;
   text-align: center;
 }
 
 #traffic-light-container {
   display: flex;
   justify-content: space-around;
-  margin: 5vw 2.5vw;
+  margin: 5vw auto;
+  width: 95vw;
 }
 
 #transfer-station-light {
@@ -228,8 +234,9 @@ html, body {
   /* Classes */
   .banner {
     border-radius: 5vw;
-    margin: 2.5vw 30vw 3.5vw 30vw;
-    padding: 2.5vw;
+    margin: 2.5vw auto 3.5vw auto;
+    padding: 2.5vw 4vw;
+    width: 50vw;
   }
 
   .guyala-clicked {
@@ -238,18 +245,18 @@ html, body {
 
   .on:hover {
     font-size: 16px;
-    height: 10vw;
-    width: 10vw;
+    height: 12vw;
+    width: 12vw;
   }
 
   .traffic-light {
-    height: 5vw;
-    width: 5vw;
+    height: 7vw;
+    width: 7vw;
   }
 
   .traffic-light-clicked {
-    height: 10vw !important;
-    width: 10vw !important;
+    height: 12vw !important;
+    width: 12vw !important;
   }
 
   /* Ids */
@@ -258,17 +265,18 @@ html, body {
   }
 
   #form {
-    margin: 2.5vw 30vw 2.5vw 30vw;
+    margin: 2.5vw auto 2.5vw auto;
     padding: 1.5vw;
+    width: 50vw;
   }
 
   #form button {
-    height: 5vw;
-    width: 5vw;
+    height: 7vw;
+    width: 7vw;
   }
 
   #form button img {
-    width: 2.5vw;
+    width: 3.5vw;
   }
 
   #form input {
@@ -276,21 +284,22 @@ html, body {
   }
 
   #guyala {
-    right: -27vw;
+    right: -24vw;
     top: 5vw;
     transform: rotate(300deg);
-    width: 45vw;
+    width: 40vw;
   }
   
   #guyala:hover {
-    transform: rotate(295deg) translate(-2.5vw, -5vw) !important;
+    transform: rotate(295deg) translate(-2.5vw, -4vw) !important;
     transition-timing-function: ease;
   }
 
   #information-container {
     border-radius: 5vw;
-    margin: 2.5vw 30vw 9vw 30vw;
-    padding: 2.5vw;
+    margin: 2.5vw auto 9vw auto;
+    padding: 2.5vw 4vw;
+    width: 50vw;
   }
 
   #reminder {
@@ -299,20 +308,25 @@ html, body {
 
   #tagline {
     padding-top: 3.5vw;
-    margin: 5vw 30vw 5.5vw 30vw;
+    margin: 5vw auto 5.5vw auto;
   }
 
   #title {
-    font-size: 4.5vw;
-    margin: -4vw 28vw 7vw 28vw;
+    font-size: 6vw;
+    margin: -4vw auto 7vw auto;
   }
 
   #traffic-light-container {
-    margin: 1vw 28.4vw 2.5vw 28.4vw;
+    margin: 1vw auto 2.5vw auto;
+    width: 54vw;
   }
 
   @media only screen and (min-width: 1200px) {
     /* Classes */
+    .banner {
+      width: 40vw;
+    }
+
     .guyala-clicked {
       transform: rotate(295deg) translate(-1.5vw, -4vw) !important;
     }
@@ -321,6 +335,11 @@ html, body {
       height: 7.5vw;
       width: 7.5vw;
     }
+
+    .traffic-light {
+      height: 6vw;
+      width: 6vw;
+    }
   
     .traffic-light-clicked {
       height: 7.5vw !important;
@@ -328,6 +347,19 @@ html, body {
     }
   
     /* Ids */  
+    #form {
+      width: 40vw;
+    }
+
+    #form button {
+      height: 6vw;
+      width: 6vw;
+    }
+  
+    #form button img {
+      width: 2.5vw;
+    }
+
     #guyala {
       right: -21vw;
       top: 3vw;
@@ -337,6 +369,18 @@ html, body {
     
     #guyala:hover {
       transform: rotate(295deg) translate(-1.5vw, -4vw) !important;
+    }
+
+    #information-container {
+      width: 40vw;
+    }
+
+    #title {
+      font-size: 4vw;
+    }
+
+    #traffic-light-container {
+      width: 44vw;
     }
   }
 }
